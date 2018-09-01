@@ -41,7 +41,7 @@ public class RunCukesTest {
 	 */
 	@AfterClass
 	public static void afterClass() {
-		Reporter.loadXMLConfig(new File("/src/test/resources/extent-config.xml"));
+		Reporter.loadXMLConfig(new File("/src/main/resources/extent-config.xml"));
 		Reporter.setSystemInfo("user", System.getProperty("user.name"));
 		Reporter.setSystemInfo("os", System.getProperty("os.name"));
 		Reporter.setTestRunnerOutput("Extent Reports generated successfully!");
